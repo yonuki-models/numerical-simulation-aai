@@ -1,0 +1,35 @@
+&nml_geometry
+number_of_grid = 768, 768, 192
+division = 96, 96
+domain_length = 3039.d0, 3039.d0, 200.d0
+/
+&nml_time
+time_end = 1880000.d0
+delta_time_max = 200.d0
+/
+&nml_parameter
+buoyancy_frequency = 7.d-4
+Coriolis_parameter = 1.d-4
+initial_noise_level = 1.d-4
+/
+&nml_dissipation
+LES_on = .True.
+Prandtl_number = 1.d0
+viscosity = 1.d-6
+LES_coefficient_H = 1.d0
+LES_coefficient_V = 1.5d0
+/
+&nml_output
+output_interval = 1.d0
+output_state_interval = 100
+/
+&nml_restart
+restart = .True.
+save_initial_data = .False.
+file_number_initial = 1300
+/
+&nml_vortex
+Rossby_number = 1.d0
+ellipticity = 0.3d0
+output_during_a_period = 100
+/

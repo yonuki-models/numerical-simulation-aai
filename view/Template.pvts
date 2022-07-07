@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<VTKFile type="PStructuredGrid" version="0.1" byte_order="LittleEndian" header_type="UInt32" compressor="vtkZLibDataCompressor">
+  <PStructuredGrid WholeExtent="" GhostLevel="0">
+    <PPointData Scalars="T" Vectors='U'>
+      <PDataArray type="Float32" Name="T"/>
+      <PDataArray type="Float32" Name="U" NumberOfComponents="3"/>
+    </PPointData>
+    <PPoints>
+      <PDataArray type="Float32" Name="Points" NumberOfComponents="3"/>
+    </PPoints>TO_BE_REPLACED
+  </PStructuredGrid>
+</VTKFile>

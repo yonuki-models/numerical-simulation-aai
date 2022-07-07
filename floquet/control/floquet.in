@@ -1,0 +1,18 @@
+&nml_parameter
+Output_max = .True.
+N_log_scale = .False.
+M_log_scale = .True.
+N_time = 20000
+NN = 2
+NM = 100000
+NR = 101
+NE = 200
+N_min = 3.d0
+N_max = 10.d0
+M_min = 1.d0
+M_max = 1.d4
+Ro_min = 0.5d0
+Ro_max = 1.0d0
+e_min = 0.d0
+e_max = 0.995d0
+/

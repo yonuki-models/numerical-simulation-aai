@@ -1,0 +1,30 @@
+# Nonlinear simulation
+src/*.mod
+build/*.mod
+build/*.o
+build/*.exe
+run/*.out
+run/*.stats
+run/*.exe
+
+data/*
+anime/*
+figure/*
+view/*.out
+view/*.stats
+view/.d*
+view/.STDIN
+
+# Floquet analysis
+floquet/src/*.mod
+floquet/build/*.mod
+floquet/build/*.exe
+floquet/build/*.o
+floquet/run/*.out
+floquet/run/*.stats
+
+floquet/data/*
+floquet/figure
+
+# Others
+STDIN*

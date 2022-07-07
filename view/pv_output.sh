@@ -12,9 +12,9 @@
 #PJM -m r
 #PJM -s
 
-module load fj/1.2.34
-module load fjmpi/1.2.34
-module load paraview/5.9.1
+module load fj
+module load fjmpi
+module load paraview
 module load llvm
 module load mesa
 

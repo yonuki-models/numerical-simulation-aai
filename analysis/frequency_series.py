@@ -149,6 +149,13 @@ W_spec_series = derive_spec(var='W') * 0.5
 KE_spec_series = U_spec_series + V_spec_series + W_spec_series
 PE_spec_series = derive_spec(var='T') * 0.5
 
+KE_spec_series_global = np.zeros_like(KE_spec_series)
+PE_spec_series_global = np.zeros_like(PE_spec_series)
+comm.Reduce(KE_spec_series, KE_spec_series_global, op=MPI.SUM, root=0)
+comm.Reduce(PE_spec_series, PE_spec_series_global, op=MPI.SUM, root=0)
+KE_spec_series_global /= size
+PE_spec_series_global /= size
+
 if rank == 0:
     np.save('./data/KE_spec_series_full', KE_spec_series)
     np.save('./data/PE_spec_series_full', PE_spec_series)

@@ -59,7 +59,7 @@ SetActiveView(renderView1)
 experiment_name = "exRo9N10e01_LES"
 uVWT000 = XMLPartitionedStructuredGridReader(
     registrationName='UVWT000*',
-    FileName=['/work/03/gs53/c24070/spectral_model_distortion_SSL/data/'
+    FileName=['/HOME/numerical-simulation-aai/data/'
               + experiment_name
               + '/vtk/UVWT{:0>6}.pvts'.format(i) for i in range(0, 280)]
 )

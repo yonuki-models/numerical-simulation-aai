@@ -1,13 +1,13 @@
 #!/bin/sh
 
-var='T'
-base_dir='../../anime/exRo10N10/'
+var='Rho'
+base_dir='../../anime/exRo10N3e06_LES/'
 tmp_dir=${base_dir}'tmp/'
 mkdir -p ${tmp_dir}
 
-for i in `seq 0 100`
+for i in `seq 0 600`
 do
-  ip=$(($i + 200))
+  ip=$(($i + 400))
   si=$(printf "%04d\n" "${i}")
   sip=$(printf "%04d\n" "${ip}")
   cp ${base_dir}${var}${sip}.png ${tmp_dir}${var}${si}.png
